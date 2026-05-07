@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Josi Doces Gourmet | Doçura Artesanal</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        /* Paleta de Cores e Configurações Gerais */
+        :root {
+            --marrom-escuro: #4b2e1e;
+            --marrom-claro: #7f5539;
+            --creme: #f5ebe0;
+            --creme-escuro: #e6ccb2; /* Nova cor para o cabeçalho */
+            --bege-claro: #edede9;
+            --branco-leite: #ffffff;
+        }
+
+        /* Rolagem Suave */
+        html { scroll-behavior: smooth; }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Georgia', serif; }
+
+        body { background-color: var(--bege-claro); color: var(--marrom-escuro); line-height: 1.6; }
+
+        /* Header Ajustado com Fundo Creme Escuro */
+        header { 
+            background: var(--creme-escuro); 
+            padding: 0 5%; 
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center; 
+            border-bottom: 3px solid var(--marrom-claro);
+            position: sticky; top: 0; z-index: 1000;
+            height: 80px;
+        }
+        
+        .logo {
+            height: 100%;
+            display: flex;
+            align-items: center;
+        }
+
+        .logo img {
+            height: 70px;
+            width: auto;
+            display: block;
+        }
+        
+        nav {
+            display: flex;
+            align-items: center;
+        }
+
+        nav a { 
+            margin-left: 20px; 
+            text-decoration: none; 
+            color: var(--marrom-escuro); 
+            font-weight: 600; 
+            font-size: 0.85rem; 
+            text-transform: uppercase;
+            transition: 0.3s;
+            white-space: nowrap;
+        }
+
+        nav a:hover { 
+            color: var(--branco-leite); /* Destaque no hover para combinar com o fundo escuro */
+        }
+
+        /* Seção: Início (Hero) */
+        .hero { 
+            height: 80vh; 
+            background: linear-gradient(rgba(75, 46, 30, 0.5), rgba(75, 46, 30, 0.5)), 
+                        url('https://i.postimg.cc/28M6M4QK/1777779837866.png'); 
+            background-size: cover; 
+            background-position: center; 
+            display: flex; 
+            flex-direction: column; 
+            justify-content: center; 
+            align-items: center; 
+            text-align: center; 
+            color: var(--creme); 
+            padding: 0 20px; 
+        }
+        .hero h1 { font-size: 3rem; margin-bottom: 15px; text-shadow: 2px 2px 4px rgba(0,0,0,0.5); }
+        .hero p { font-size: 1.2rem; margin-bottom: 30px; max-width: 600px; text-shadow: 1px 1px 3px rgba(0,0,0,0.5); }
+
+        .btn-principal { 
+            background-color: var(--marrom-escuro); 
+            color: var(--creme); 
+            padding: 15px 30px; 
+            text-decoration: none; 
+            border-radius: 5px; 
+            font-weight: bold; 
+            border: 2px solid var(--creme);
+            transition: 0.3s;
+        }
+        .btn-principal:hover { background-color: var(--marrom-claro); }
+
+        /* Seção: Sobre Nós / História */
+        .secao-conteudo { padding: 100px 10%; text-align: center; }
+        .bg-creme { background: var(--creme); }
+        
+        .secao-conteudo h2 { color: var(--marrom-escuro); font-size: 2.2rem; margin-bottom: 25px; }
+        .secao-conteudo p { font-size: 1.1rem; max-width: 800px; margin: 0 auto; }
+
+        /* Seção: Diferenciais (Grid) */
+        .grid-caseiro { display: flex; justify-content: space-around; flex-wrap: wrap; padding: 50px 0; }
+        .item-caseiro { flex: 1; min-width: 250px; margin: 15px; padding: 25px; border: 1px dashed var(--marrom-claro); border-radius: 8px; }
+        .item-caseiro i { font-size: 2rem; color: var(--marrom-claro); margin-bottom: 15px; }
+
+        /* Rodapé */
+        footer { background: var(--marrom-escuro); color: var(--creme); padding: 50px 5%; text-align: center; }
+        .insta-link { color: var(--creme); text-decoration: none; font-size: 1.1rem; font-weight: bold; }
+        
+        @media (max-width: 768px) {
+            header { height: auto; padding: 10px; flex-direction: column; }
+            .logo img { height: 60px; margin-bottom: 10px; }
+            nav a { margin: 5px 8px; font-size: 0.75rem; }
+            .hero h1 { font-size: 2.2rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="https://i.postimg.cc/NM00hLSz/27752-(4).png" alt="Josi Doces Gourmet Logo">
+        </div>
+        <nav>
+            <a href="#inicio">Início</a>
+            <a href="#sobre">Sobre Nós</a>
+            <a href="#diferenciais">Diferenciais</a>
+            <a href="https://everton1903.github.io/Josi-Doces-Gourmet/" target="_blank">Cardápio</a>
+        </nav>
+    </header>
+
+    <section class="hero" id="inicio">
+        <h1>Doçura em cada detalhe</h1>
+        <p>Receitas caseiras feitas com ingredientes selecionados e muito carinho.</p>
+        <a href="https://everton1903.github.io/Josi-Doces-Gourmet/" target="_blank" class="btn-principal">ACESSAR CARDÁPIO COMPLETO</a>
+    </section>
+
+    <section class="secao-conteudo bg-creme" id="sobre">
+        <h2>Nossa História</h2>
+        <p>
+            Iniciada em <strong>19 de abril de 2026</strong>, a <strong>Josi Doces Gourmet</strong> começou de forma simples, entre panelas e sonhos na cozinha de casa. O que era um hobby se transformou em paixão ao ver o sorriso de quem provava nossos doces. Hoje, cada torta de bolacha e bolo que sai da nossa cozinha carrega essa essência: o sabor autêntico do doce feito à mão, com a qualidade de produtos gourmet premium.
+        </p>
+    </section>
+
+    <section class="secao-conteudo" id="diferenciais">
+        <h2>Por que nos escolher?</h2>
+        <div class="grid-caseiro">
+            <div class="item-caseiro">
+                <i class="fas fa-heart"></i>
+                <h3>Feito com Amor</h3>
+                <p>Cada doce é único e preparado artesanalmente.</p>
+            </div>
+            <div class="item-caseiro">
+                <i class="fas fa-star"></i>
+                <h3>Qualidade Premium</h3>
+                <p>Só utilizamos os melhores chocolates e ingredientes do mercado.</p>
+            </div>
+            <div class="item-caseiro">
+                <i class="fas fa-leaf"></i>
+                <h3>Sempre Fresquinho</h3>
+                <p>Produzimos sob encomenda para garantir o frescor total.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p style="margin-bottom: 20px;">Josi Doces Gourmet — 2026</p>
+        <a href="https://www.instagram.com/Josigourmet" target="_blank" class="insta-link">
+            <i class="fab fa-instagram"></i> Siga nosso dia a dia @Josigourmet
+        </a>
+        <div style="margin-top: 30px; opacity: 0.7; font-size: 0.85rem;">
+            <p>Faça seu pedido online através do nosso cardápio digital oficial.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
